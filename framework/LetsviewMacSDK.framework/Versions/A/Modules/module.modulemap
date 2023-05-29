@@ -1,0 +1,11 @@
+framework module LetsviewMacSDK {
+  umbrella header "LetsviewMacSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module LetsviewMacSDK.Swift {
+  header "LetsviewMacSDK-Swift.h"
+  requires objc
+}

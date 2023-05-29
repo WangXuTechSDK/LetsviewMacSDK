@@ -4,12 +4,12 @@
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-# pod spec lint LetsviewMacSDK.podspec --verbose
+# pod trunk push LetsviewMacSDK.podspec --allow-warnings --skip-import-validation --verbose
 
 Pod::Spec.new do |spec|
 
   spec.name         = "LetsviewMacSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A short description of LetsviewMacSDK."
 
   spec.description  = "letsviewSDK"
@@ -33,7 +33,7 @@ Pod::Spec.new do |spec|
     spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
         spec.swift_version = ['5.0', '5.1', '5.2','5.3']
 
-  spec.vendored_frameworks ='LetsviewMacSDK.framework'
+  spec.vendored_frameworks ='framework/*.{framework}'
 
     spec.libraries = 'c++', 'z', 'iconv'
     spec.frameworks = 'VideoToolbox', 'CoreMedia', 'AudioToolbox', 'Cocoa'
