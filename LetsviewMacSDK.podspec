@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
   spec.author      = { "wangxutech" => "moblie@wangxutech.com" }
 
-     spec.source       = { :git => "https://github.com/WangXuTechSDK/LetsviewMacSDK.git", :tag => s.version.to_s }
+     spec.source       = { :git => "https://github.com/WangXuTechSDK/LetsviewMacSDK.git", :tag => spec.version.to_s }
 
 
 
